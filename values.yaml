@@ -8,7 +8,7 @@ bootnode:
   replicaCount: 2
   image:
     repository: ethereum/client-go
-    tag: alltools-release-1.7
+    tag: alltools-stable
 
 bootnodeRegistrar:
   replicaCount: 1
@@ -28,7 +28,7 @@ ethstats:
 geth:
   image:
     repository: ethereum/client-go
-    tag: v1.7.2
+    tag: stable
   tx:
     # transaction nodes
     replicaCount: 2
@@ -36,7 +36,7 @@ geth:
       type: ClusterIP
   miner:
     # miner nodes
-    replicaCount: 3
+    replicaCount: 8
     account:
       secret: my-secret-account-password
   genesis:
